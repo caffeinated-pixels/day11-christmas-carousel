@@ -18,6 +18,10 @@ const imgs = [
     src: 'imgs/doggies.jpg',
     alt: 'small black dog and small beige dog looking out the window at snow next to Christmas wreath',
   },
+  {
+    src: 'imgs/vintage.jpg',
+    alt: 'an assortment of Christmas decorations and vintage Christmas cards',
+  },
 ]
 
 let imgNum = 0
