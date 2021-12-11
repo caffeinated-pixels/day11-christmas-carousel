@@ -23,11 +23,23 @@ const imgs = [
 let imgNum = 0
 
 function previousImage() {
-  console.log('prev')
+  imgNum--
+  if (imgNum === -1) {
+    imgNum = imgs.length - 1
+  }
+
+  img.src = imgs[imgNum].src
+  img.alt = imgs[imgNum].alt
 }
 
 function nextImage() {
-  console.log('next')
+  imgNum++
+  if (imgNum === imgs.length) {
+    imgNum = 0
+  }
+
+  img.src = imgs[imgNum].src
+  img.alt = imgs[imgNum].alt
 }
 
 // Task:
