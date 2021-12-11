@@ -55,6 +55,17 @@ button {
   border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+
+  transition: transform 0.2s;
+}
+
+button:hover,
+button:focus-visible {
+  filter: brightness(0.9);
+}
+
+button:active {
+  transform: scale(0.9);
 }
 
 .material-icons-outlined {

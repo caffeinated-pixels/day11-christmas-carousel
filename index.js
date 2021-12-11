@@ -1,6 +1,10 @@
 const previous = document.getElementById('previous')
 const next = document.getElementById('next')
 const img = document.getElementById('img')
+
+previous.addEventListener('click', previousImage)
+next.addEventListener('click', nextImage)
+
 const imgs = [
   {
     src: 'imgs/village.jpg',
@@ -17,6 +21,14 @@ const imgs = [
 ]
 
 let imgNum = 0
+
+function previousImage() {
+  console.log('prev')
+}
+
+function nextImage() {
+  console.log('next')
+}
 
 // Task:
 // - Wire up the buttons to switch through the images in the imgs array.
